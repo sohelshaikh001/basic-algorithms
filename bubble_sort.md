@@ -5,5 +5,12 @@ Bubble sort psuedocode
 ```
 # Write the psuedocode 
 START
+
+BubbleSort(arr):
+for i from 0 to length of arr - 1:
+for j from 0 to length of arr - 1 - i:
+if arr[j] > arr[j+1]:
+swap arr[j] and arr[j+1] 
+
 END
 ```
