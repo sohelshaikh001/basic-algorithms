@@ -10,30 +10,30 @@ PRINT "Enter party size: "
 INPUT party_size
 
 IF service_quality = "poor" THEN
-PRINT "Service Quality is :"service_quality
-Tip = 10 * Bill_amount / 100
-PRINT "Tip amount: ", Tip
+    PRINT "Service Quality is :"service_quality
+    Tip = 10 * Bill_amount / 100
+    PRINT "Tip amount: ", Tip
 
 ELSE IF service_quality = "fair" THEN
-PRINT "Service Quality is :"service_quality
-Tip = 15 * Bill_amount / 100
-PRINT "Tip amount: ", Tip
+    PRINT "Service Quality is :"service_quality
+    Tip = 15 * Bill_amount / 100
+    PRINT "Tip amount: ", Tip
 
 ELSE IF service_quality = "good" THEN
-PRINT "Service Quality is :"service_quality
-Tip = 18 * Bill_amount / 100
-PRINT "Tip amount: ", Tip
+    PRINT "Service Quality is :"service_quality
+    Tip = 18 * Bill_amount / 100
+    PRINT "Tip amount: ", Tip
 
 ELSE IF service_quality = "excellent" THEN
-PRINT "Service Quality is :"service_quality
-Tip = 20 * Bill_amount / 100
-PRINT "Tip amount: ", Tip
+    PRINT "Service Quality is :"service_quality
+    Tip = 20 * Bill_amount / 100
+    PRINT "Tip amount: ", Tip
 
 END IF
 
-PRINT "Total Amount: ",Bill_amount + Tip
-PRINT "Number of people: ",party_size
-per_person = Bill_amount + Tip / party_size
+    PRINT "Total Amount: ",Bill_amount + Tip
+    PRINT "Number of people: ",party_size
+    per_person = Bill_amount + Tip / party_size
 
 PRINT "Amount per person: ",per_person
 
