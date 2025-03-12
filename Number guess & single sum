@@ -1,0 +1,36 @@
+
+# A number guessing game where the program selects a random number between 1 and 20, 
+#   and the user must guess it.
+
+import random  
+random_number = random.randint(1,20) 
+
+chance = 5
+
+user_val = int(input("Guess the Number:>"))
+
+if user_val <= 0 and user_val > 20:
+    print("Invalid Input:",user_val)
+
+elif user_val < random_number:
+    print("Number is too low:")
+
+elif user_val > random_number:
+    print("Number is too high:")
+
+else:
+    print("Number is correct:")
+
+
+
+
+
+
+
+# Write a program that repeatedly adds the digits of a number until the sum is a single digit.   
+
+num = int(input("Enter the Number: "))
+while num >= 10:
+    num = sum(int(digit) for digit in str(num))
+
+print("OutPut:",num)
