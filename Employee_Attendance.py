@@ -30,7 +30,7 @@ def search_attendance(employee_id):
         print(f"No records found for Employee {employee_id}.")
 
 
-# Example Usage
+
 mark_attendance(101, "2025-03-02", "Present")
 search_attendance(101)
 search_attendance(102)
